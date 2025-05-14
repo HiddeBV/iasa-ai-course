@@ -44,7 +44,7 @@ graph LR
 ```mermaid
 flowchart LR
     A[Data collection] --> B[Labeling tool]
-    B --> C[ML Framework]
+    B --> C[ML framework]
     C --> D[Experiment tracking]
 ```
 
@@ -57,17 +57,10 @@ flowchart LR
 ```mermaid
 flowchart TD
     A[Raw Images] --> B[Labeling]
-    B --> C[Dataset Split]
-    C --> D1[Training Set]
-    C --> D2[Validation Set]
-    C --> D3[Test Set]
-```
-
----
-## Slide 6: Summary & next steps
-- Use CNNs for image classification
-- Leverage modern ML frameworks and data tools
-- Prepare a robust, labeled dataset
+    B --> C[Dataset split]
+    C --> D1[Training set]
+    C --> D2[Validation set]
+    C --> D3[Test set]
 
 ---
 ## Extra teacher credit: TensorFlow, Flask, and Docker
@@ -127,8 +120,8 @@ CMD ["python", "app.py"]
 ```mermaid
 flowchart TD
     A[User Uploads Image] --> B[Flask API]
-    B --> C[TensorFlow Model]
-    C --> D[Prediction Returned]
+    B --> C[TensorFlow model]
+    C --> D[Prediction returned]
 ```
 
 ---
