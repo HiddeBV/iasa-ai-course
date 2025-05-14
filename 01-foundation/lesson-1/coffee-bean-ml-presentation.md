@@ -61,6 +61,7 @@ flowchart TD
     C --> D1[Training set]
     C --> D2[Validation set]
     C --> D3[Test set]
+```
 
 ---
 ## Extra teacher credit: TensorFlow, Flask, and Docker
