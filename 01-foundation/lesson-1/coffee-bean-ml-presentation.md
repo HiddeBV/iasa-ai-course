@@ -124,7 +124,7 @@ Extra: We use a CNN because it's like giving the computer a magnifying glass to 
 -->
 
 ---
-### Slide 6: Saving a TensorFlow model
+### Slide 7: Saving a TensorFlow model
 - After training, save the model weights:
 
 ```python
@@ -139,7 +139,7 @@ Extra: Saving the model is like saving your progress in a video game. You don't 
 -->
 
 ---
-### Slide 7: Serving the model with Flask
+### Slide 8: Serving the model with Flask
 - Create a Flask API to load and serve the model:
 
 ```python
@@ -173,7 +173,7 @@ Extra: We use Flask because it's like building a small post office for our model
 -->
 
 ---
-### Slide 8: Dockerizing the Flask App
+### Slide 9: Dockerizing the Flask App
 - Example Dockerfile:
 
 ```dockerfile
@@ -192,7 +192,7 @@ Extra: We use Docker because it's like putting our app in a lunchbox—everythin
 -->
 
 ---
-### Slide 9: Workflow diagram
+### Slide 10: Workflow diagram
 
 ```mermaid
 flowchart TD
@@ -208,7 +208,7 @@ Extra: The workflow is like an assembly line: the user is the person putting som
 -->
 
 ---
-### Slide 10: Summary
+### Slide 11: Summary
 - Train and save model with TensorFlow
 - Serve predictions with Flask
 - Deploy as a Docker container for portability
