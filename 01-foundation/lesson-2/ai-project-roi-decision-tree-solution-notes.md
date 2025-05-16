@@ -1,4 +1,4 @@
-# Solution Notes: AI project ROI decision tree
+# Solution notes: AI project ROI decision tree
 
 ## Assignment overview
 
@@ -108,6 +108,36 @@ graph TD
 ```
 
 *(Note: This Mermaid diagram provides a high-level overview. The "Impact Quantification" for benefits other than "Cost Reduction" are simplified to directly proceed to Feasibility for brevity in this main diagram. You might consider creating separate, more detailed diagrams for each benefit path if needed.)*
+
+### how the decision tree applies to coffee processes
+
+#### coffee importing
+- **strategic alignment:** does the ai project align with improving the efficiency or quality of coffee importing (e.g., predicting optimal sourcing regions, identifying cost-effective suppliers)?
+- **business impact:** could it reduce costs (e.g., optimizing shipping routes, minimizing import tariffs) or mitigate risks (e.g., forecasting supply chain disruptions, ensuring compliance with import regulations)?
+- **impact quantification:** can the cost savings or risk mitigation be quantified (e.g., reduced shipping costs, fewer delays, lower tariff expenses)?
+- **feasibility:** do we have the data (e.g., historical import data, supplier performance metrics) and technology to implement the project?
+- **roi assessment:** if the impact is high and effort is low, prioritize the project.
+
+#### coffee roasting
+- **strategic alignment:** does the ai project enhance roasting quality or reduce waste (e.g., optimizing roasting profiles, predicting bean quality)?
+- **business impact:** could it improve efficiency (e.g., automating roasting adjustments, reducing energy consumption) or increase revenue (e.g., creating premium products, improving consistency for high-end markets)?
+- **impact quantification:** can the benefits be measured (e.g., reduced waste, increased product value, lower energy costs)?
+- **feasibility:** do we have the necessary data (e.g., roasting logs, energy usage data) and skills to implement the project?
+- **roi assessment:** evaluate based on impact versus effort.
+
+#### coffee distribution
+- **strategic alignment:** does the ai project improve distribution efficiency (e.g., route optimization, warehouse management) or customer satisfaction (e.g., delivery tracking, accurate delivery time predictions)?
+- **business impact:** could it reduce costs (e.g., fuel savings, optimized inventory levels) or increase revenue (e.g., faster delivery times, improved customer retention)?
+- **impact quantification:** can the benefits be quantified (e.g., reduced delivery times, lower fuel costs, fewer stockouts)?
+- **feasibility:** assess the availability of data (e.g., delivery logs, inventory data) and technology.
+- **roi assessment:** prioritize projects with high impact and low effort.
+
+#### coffee delivery
+- **strategic alignment:** does the ai project enhance delivery operations (e.g., real-time tracking, automated delivery scheduling) or customer experience (e.g., personalized delivery options, proactive issue resolution)?
+- **business impact:** could it increase efficiency (e.g., automating delivery scheduling, reducing failed deliveries) or revenue (e.g., improved customer retention, upselling opportunities during delivery)?
+- **impact quantification:** can the benefits be measured (e.g., reduced delivery times, increased customer satisfaction, fewer failed deliveries)?
+- **feasibility:** evaluate the data and technology readiness (e.g., gps tracking, customer feedback systems).
+- **roi assessment:** focus on projects with significant benefits and manageable implementation effort.
 
 ### Next steps for presentation:
 
