@@ -70,7 +70,7 @@ These pillars should be used alongside the existing feasibility criteria (data, 
 ### Mermaid Diagram: AI project ROI decision tree
 
 ```mermaid
-graph TD
+graph LR
     A[start: new AI project proposal] --> B{L1: strategic alignment?};
     B -- Yes --> FP[Evaluate: Objective, Audience, Training, Operations];
     B -- No --> Z1[reject/re-evaluate: not aligned];
