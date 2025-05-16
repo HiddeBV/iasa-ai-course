@@ -44,7 +44,7 @@ A decision tree for evaluating AI project ROI for non-technical stakeholders sho
     *   **Partially, gaps exist:** identify gaps and plan to address.
     *   **No, significant gaps:** high risk. Re-evaluate or invest in prerequisites.
 
-#### Feasibility: Evaluating the Four Pillars
+#### Feasibility: evaluating the four pillars
 
 To assess the feasibility of an AI project, consider the following four pillars:
 
@@ -54,6 +54,10 @@ To assess the feasibility of an AI project, consider the following four pillars:
 4. **Operations**: Assess the average daily cost of running the AI system in production. Include infrastructure, maintenance, and monitoring costs.
 
 These pillars should be used alongside the existing feasibility criteria (data, skills, and technology readiness) to provide a comprehensive evaluation of the project's feasibility.
+
+**Integration with Decision Tree**:
+- After evaluating the four pillars, projects with high feasibility should proceed to ROI assessment.
+- Projects with gaps in feasibility should identify and address these gaps before moving forward.
 
 ### Level 5: ROI Assessment & decision
 
@@ -105,13 +109,17 @@ graph TD
     L -- low impact / low effort --> O[opportunistic: consider if resources allow];
     L -- low impact / high effort --> P[avoid/de-prioritize];
 
+    %% Adding the four pillars explicitly in Feasibility
+    G1 --> FP[Evaluate: Objective, Audience, Training, Operations];
+    FP --> H;
+
     classDef question fill:#f9f,stroke:#333,stroke-width:2px,color:#333;
     classDef decision fill:#lightgrey,stroke:#333,stroke-width:2px,color:#333;
     classDef outcomeGreen fill:#ccffcc,stroke:#333,stroke-width:2px,color:#333;
     classDef outcomeRed fill:#ffcccc,stroke:#333,stroke-width:2px,color:#333;
     classDef outcomeOrange fill:#ffebcc,stroke:#333,stroke-width:2px,color:#333;
 
-    class A,B,C,E1,F1,H,I,L question;
+    class A,B,C,E1,F1,H,I,L,FP question;
     class Z1,Z2,Z3,P outcomeRed;
     class M outcomeGreen;
     class N,O,K outcomeOrange;
