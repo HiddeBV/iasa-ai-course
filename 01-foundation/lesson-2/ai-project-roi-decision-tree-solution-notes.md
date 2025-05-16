@@ -13,8 +13,23 @@ A decision tree for evaluating AI project ROI for non-technical stakeholders sho
 ### Level 1: Strategic alignment
 
 *   **Question 1:** Does the proposed AI project directly align with our company's strategic objectives for coffee importing, roasting, distribution, or delivery?
-    *   **Yes:** proceed to Level 2.
+    *   **Yes:** proceed to Evaluate: Objective, Audience, Training, Operations.
     *   **No:** re-evaluate or reject. (clearly state why it's not aligned).
+
+### Evaluate: Objective, Audience, Training, Operations
+
+To assess the feasibility of an AI project, consider the following four pillars:
+
+1. **Objective**: Clearly define the problem the AI project aims to solve. Ensure it aligns with the strategic goals of the company and addresses a specific pain point.
+2. **Audience**: Estimate the number of paying customers or stakeholders who will benefit from the system. Quantify the potential positive impact on customer satisfaction or retention.
+3. **Training**: Evaluate the time and cost required to classify the data and train the AI model. Consider the availability of labeled data and the complexity of the training process.
+4. **Operations**: Assess the average daily cost of running the AI system in production. Include infrastructure, maintenance, and monitoring costs.
+
+These pillars should be used alongside the existing feasibility criteria (data, skills, and technology readiness) to provide a comprehensive evaluation of the project's feasibility.
+
+**Integration with decision tree**:
+- After evaluating the four pillars, projects with high feasibility should proceed to ROI assessment.
+- Projects with gaps in feasibility should identify and address these gaps before moving forward.
 
 ### Level 2: Potential business impact
 
@@ -44,21 +59,6 @@ A decision tree for evaluating AI project ROI for non-technical stakeholders sho
     *   **Partially, gaps exist:** identify gaps and plan to address.
     *   **No, significant gaps:** high risk. Re-evaluate or invest in prerequisites.
 
-#### Feasibility: evaluating the four pillars
-
-To assess the feasibility of an AI project, consider the following four pillars:
-
-1. **Objective**: Clearly define the problem the AI project aims to solve. Ensure it aligns with the strategic goals of the company and addresses a specific pain point.
-2. **Audience**: Estimate the number of paying customers or stakeholders who will benefit from the system. Quantify the potential positive impact on customer satisfaction or retention.
-3. **Training**: Evaluate the time and cost required to classify the data and train the AI model. Consider the availability of labeled data and the complexity of the training process.
-4. **Operations**: Assess the average daily cost of running the AI system in production. Include infrastructure, maintenance, and monitoring costs.
-
-These pillars should be used alongside the existing feasibility criteria (data, skills, and technology readiness) to provide a comprehensive evaluation of the project's feasibility.
-
-**Integration with Decision Tree**:
-- After evaluating the four pillars, projects with high feasibility should proceed to ROI assessment.
-- Projects with gaps in feasibility should identify and address these gaps before moving forward.
-
 ### Level 5: ROI Assessment & decision
 
 *   **Based on impact vs. effort/cost:**
@@ -72,8 +72,10 @@ These pillars should be used alongside the existing feasibility criteria (data, 
 ```mermaid
 graph TD
     A[start: new AI project proposal] --> B{L1: strategic alignment?};
-    B -- Yes --> C{L2: primary business benefit?};
+    B -- Yes --> FP[Evaluate: Objective, Audience, Training, Operations];
     B -- No --> Z1[reject/re-evaluate: not aligned];
+
+    FP --> C{L2: primary business benefit?};
 
     C --> D1[cost reduction];
     C --> D2[revenue increase];
@@ -108,10 +110,6 @@ graph TD
     L -- high impact / medium-high effort --> N[strategic bet: plan carefully];
     L -- low impact / low effort --> O[opportunistic: consider if resources allow];
     L -- low impact / high effort --> P[avoid/de-prioritize];
-
-    %% Adding the four pillars explicitly in Feasibility
-    G1 --> FP[Evaluate: Objective, Audience, Training, Operations];
-    FP --> H;
 
     classDef question fill:#f9f,stroke:#333,stroke-width:2px,color:#333;
     classDef decision fill:#lightgrey,stroke:#333,stroke-width:2px,color:#333;
