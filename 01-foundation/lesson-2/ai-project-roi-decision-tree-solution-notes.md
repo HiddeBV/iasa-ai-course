@@ -71,51 +71,60 @@ These pillars should be used alongside the existing feasibility criteria (data, 
 
 ```mermaid
 graph TD
-    A[start: new AI project proposal] --> B{Strategic alignment?};
+    A[start: new AI project proposal] --> B{L1: strategic alignment?};
     B -- Yes --> FP[Evaluate: Objective, Audience, Training, Operations];
-    B -- No --> Z1[Reject: not aligned];
+    B -- No --> Z1[reject/re-evaluate: not aligned];
 
-    FP --> C{Primary business benefit?};
+    FP --> C{L2: primary business benefit?};
 
-    C --> D1[Cost reduction];
-    C --> D2[Revenue increase];
-    C --> D3[Risk mitigation];
-    C --> D4[Efficiency improvement];
+    C --> D1[cost reduction];
+    C --> D2[revenue increase];
+    C --> D3[risk mitigation];
+    C --> D4[efficiency improvement];
+    C --> D5[other];
 
-    D1 --> G1[Proceed to feasibility];
+    D1 --> E1{L3: est. cost savings accurately?};
+    E1 -- Yes --> F1{est. annual savings?};
+    F1 --> G1[proceed to feasibility];
+    E1 -- No --> Z2[hold: further analysis needed];
+
+    %% Placeholder for other benefit paths leading to Feasibility
     D2 --> G1;
     D3 --> G1;
     D4 --> G1;
+    D5 --> G1;
 
-    G1 --> H{Estimated effort/cost?};
-    H -- Low --> I{Data, skills, tech available?};
+    G1 --> H{L4: estimated effort/cost?};
+    H -- Low --> I{L4: data, skills, tech available?};
     H -- Medium --> I;
     H -- High --> I;
 
-    I -- Yes --> J[Proceed to ROI assessment];
-    I -- Partially --> K[Address gaps then ROI assessment];
-    I -- No --> Z3[High risk: re-evaluate];
+    I -- Yes, mostly --> J[proceed to ROI assessment];
+    I -- Partially, gaps exist --> K[identify/address gaps then ROI assessment];
+    I -- No, significant gaps --> Z3[high risk: re-evaluate/invest in prerequisites];
 
-    J --> L{ROI assessment};
+    J --> L{L5: ROI assessment};
     K --> L;
 
-    L -- High impact / low effort --> M[Prioritize: quick win];
-    L -- High impact / medium effort --> N[Strategic bet: plan carefully];
-    L -- Low impact / low effort --> O[Consider if resources allow];
-    L -- Low impact / high effort --> P[Avoid/de-prioritize];
+    L -- high impact / low effort --> M[prioritize: quick win];
+    L -- high impact / medium-high effort --> N[strategic bet: plan carefully];
+    L -- low impact / low effort --> O[opportunistic: consider if resources allow];
+    L -- low impact / high effort --> P[avoid/de-prioritize];
 
-    classDef question fill:#f9f,stroke:#333,stroke-width:1px,color:#333,font-size:10px;
-    classDef decision fill:#lightgrey,stroke:#333,stroke-width:1px,color:#333,font-size:10px;
-    classDef outcomeGreen fill:#ccffcc,stroke:#333,stroke-width:1px,color:#333,font-size:10px;
-    classDef outcomeRed fill:#ffcccc,stroke:#333,stroke-width:1px,color:#333,font-size:10px;
-    classDef outcomeOrange fill:#ffebcc,stroke:#333,stroke-width:1px,color:#333,font-size:10px;
+    classDef question fill:#f9f,stroke:#333,stroke-width:2px,color:#333;
+    classDef decision fill:#lightgrey,stroke:#333,stroke-width:2px,color:#333;
+    classDef outcomeGreen fill:#ccffcc,stroke:#333,stroke-width:2px,color:#333;
+    classDef outcomeRed fill:#ffcccc,stroke:#333,stroke-width:2px,color:#333;
+    classDef outcomeOrange fill:#ffebcc,stroke:#333,stroke-width:2px,color:#333;
 
-    class A,B,C,H,I,L,FP question;
-    class Z1,Z3,P outcomeRed;
+    class A,B,C,E1,F1,H,I,L,FP question;
+    class Z1,Z2,Z3,P outcomeRed;
     class M outcomeGreen;
     class N,O,K outcomeOrange;
-    class D1,D2,D3,D4,G1,J decision;
+    class D1,D2,D3,D4,D5,G1,J decision;
 ```
+
+*(Note: This Mermaid diagram provides a high-level overview. The "Impact Quantification" for benefits other than "Cost Reduction" are simplified to directly proceed to Feasibility for brevity in this main diagram. You might consider creating separate, more detailed diagrams for each benefit path if needed.)*
 
 ### how the decision tree applies to coffee processes
 
