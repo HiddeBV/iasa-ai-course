@@ -1,4 +1,4 @@
-# Solution Notes: AI Project ROI Decision Tree
+# Solution Notes: AI project ROI decision tree
 
 ## Assignment overview
 
@@ -33,7 +33,26 @@ A decision tree for evaluating AI project ROI for non-technical stakeholders sho
 
 *(Similar quantification questions would follow for revenue increase, risk mitigation, etc.)*
 
-### Mermaid Diagram: AI Project ROI Decision Tree
+### Level 4: Feasibility & effort
+
+*   **Question 4:** What is the estimated effort/cost to implement this AI project?
+    *   **Low:** (e.g., <3 months, <$X budget)
+    *   **Medium:** (e.g., 3-9 months, $X-$Y budget)
+    *   **High:** (e.g., >9 months, >$Y budget)
+*   **Question 5:** Do we have the necessary data, skills, and technology?
+    *   **Yes, mostly:** proceed.
+    *   **Partially, gaps exist:** identify gaps and plan to address.
+    *   **No, significant gaps:** high risk. Re-evaluate or invest in prerequisites.
+
+### Level 5: ROI Assessment & decision
+
+*   **Based on impact vs. effort/cost:**
+    *   **High impact / low effort:** prioritize (Quick win)
+    *   **High impact / medium-high effort:** Strategic bet (plan carefully)
+    *   **Low impact / low effort:** consider if resources allow (Opportunistic)
+    *   **Low impact / high effort:** avoid or de-prioritize
+
+### Mermaid Diagram: AI project ROI decision tree
 
 ```mermaid
 graph TD
@@ -90,28 +109,8 @@ graph TD
 
 *(Note: This Mermaid diagram provides a high-level overview. The "Impact Quantification" for benefits other than "Cost Reduction" are simplified to directly proceed to Feasibility for brevity in this main diagram. You might consider creating separate, more detailed diagrams for each benefit path if needed.)*
 
-### Level 4: Feasibility & effort
-
-*   **Question 4:** What is the estimated effort/cost to implement this AI project?
-    *   **Low:** (e.g., <3 months, <$X budget)
-    *   **Medium:** (e.g., 3-9 months, $X-$Y budget)
-    *   **High:** (e.g., >9 months, >$Y budget)
-*   **Question 5:** Do we have the necessary data, skills, and technology?
-    *   **Yes, mostly:** proceed.
-    *   **Partially, gaps exist:** identify gaps and plan to address.
-    *   **No, significant gaps:** high risk. Re-evaluate or invest in prerequisites.
-
-### Level 5: ROI Assessment & decision
-
-*   **Based on impact vs. effort/cost:**
-    *   **High impact / low effort:** prioritize (Quick win)
-    *   **High impact / medium-high effort:** Strategic bet (plan carefully)
-    *   **Low impact / low effort:** consider if resources allow (Opportunistic)
-    *   **Low impact / high effort:** avoid or de-prioritize
-
 ### Next steps for presentation:
 
-*   Visualize this tree.
 *   Use coffee-specific examples for each branch.
 *   Keep language simple and avoid technical jargon.
 *   Focus on how this tree helps make informed decisions.
