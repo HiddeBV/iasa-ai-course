@@ -44,6 +44,17 @@ A decision tree for evaluating AI project ROI for non-technical stakeholders sho
     *   **Partially, gaps exist:** identify gaps and plan to address.
     *   **No, significant gaps:** high risk. Re-evaluate or invest in prerequisites.
 
+#### Feasibility: Evaluating the Four Pillars
+
+To assess the feasibility of an AI project, consider the following four pillars:
+
+1. **Objective**: Clearly define the problem the AI project aims to solve. Ensure it aligns with the strategic goals of the company and addresses a specific pain point.
+2. **Audience**: Estimate the number of paying customers or stakeholders who will benefit from the system. Quantify the potential positive impact on customer satisfaction or retention.
+3. **Training**: Evaluate the time and cost required to classify the data and train the AI model. Consider the availability of labeled data and the complexity of the training process.
+4. **Operations**: Assess the average daily cost of running the AI system in production. Include infrastructure, maintenance, and monitoring costs.
+
+These pillars should be used alongside the existing feasibility criteria (data, skills, and technology readiness) to provide a comprehensive evaluation of the project's feasibility.
+
 ### Level 5: ROI Assessment & decision
 
 *   **Based on impact vs. effort/cost:**
@@ -138,6 +149,86 @@ graph TD
 - **impact quantification:** can the benefits be measured (e.g., reduced delivery times, increased customer satisfaction, fewer failed deliveries)?
 - **feasibility:** evaluate the data and technology readiness (e.g., gps tracking, customer feedback systems).
 - **roi assessment:** focus on projects with significant benefits and manageable implementation effort.
+
+### Example use case: Coffee roasting AI project
+
+#### Applying the four pillars
+
+1. **Objective**: The AI project aims to optimize coffee roasting profiles to enhance quality and reduce waste. This aligns with the strategic goal of improving product consistency and minimizing resource usage.
+2. **Audience**: The primary beneficiaries are high-end market customers who demand consistent quality. This could positively impact approximately 30% of the customer base, leading to increased satisfaction and retention.
+3. **Training**: The project requires historical roasting logs and energy usage data. The estimated time to classify the data and train the model is 2 months, with a cost of $20,000.
+4. **Operations**: The AI system's daily operational cost, including cloud infrastructure and monitoring, is estimated at $50 per day.
+
+#### Feasibility assessment
+- **Data Availability**: Historical roasting logs and energy usage data are available.
+- **Skills and Technology**: The team has expertise in machine learning and access to necessary tools.
+- **Effort/Cost**: The project is categorized as low effort (<3 months, <$50,000 budget).
+
+#### ROI assessment
+- **Impact**: High impact due to improved product quality and reduced waste.
+- **Effort**: Low effort, making this a quick win.
+
+**Decision**: Prioritize this project as it offers high impact with manageable effort and cost.
+
+### Example use case: Coffee importing AI project
+
+#### Applying the four pillars
+
+1. **Objective**: The AI project aims to predict optimal sourcing regions and identify cost-effective suppliers to improve the efficiency and quality of coffee importing.
+2. **Audience**: The primary beneficiaries are procurement teams and suppliers, ensuring a steady supply of high-quality beans. This could positively impact the entire supply chain, reducing delays and costs.
+3. **Training**: The project requires historical import data and supplier performance metrics. The estimated time to classify the data and train the model is 3 months, with a cost of $30,000.
+4. **Operations**: The AI system's daily operational cost, including cloud infrastructure and monitoring, is estimated at $70 per day.
+
+#### Feasibility assessment
+- **Data availability**: Historical import data and supplier performance metrics are available.
+- **Skills and technology**: The team has expertise in supply chain analytics and access to necessary tools.
+- **Effort/cost**: The project is categorized as medium effort (3-9 months, $30,000 budget).
+
+#### ROI assessment
+- **Impact**: High impact due to reduced shipping costs and fewer delays.
+- **Effort**: Medium effort, making this a strategic bet.
+
+**Decision**: Proceed with careful planning as it offers significant benefits to the supply chain.
+
+### Example use case: Coffee distribution AI project
+
+#### Applying the four pillars
+
+1. **Objective**: The AI project aims to optimize distribution routes and improve warehouse management to enhance efficiency and reduce costs.
+2. **Audience**: The primary beneficiaries are logistics teams and customers, ensuring timely deliveries and reduced operational costs. This could positively impact 40% of the customer base.
+3. **Training**: The project requires delivery logs and inventory data. The estimated time to classify the data and train the model is 4 months, with a cost of $25,000.
+4. **Operations**: The AI system's daily operational cost, including cloud infrastructure and monitoring, is estimated at $60 per day.
+
+#### Feasibility assessment
+- **Data availability**: Delivery logs and inventory data are available.
+- **Skills and technology**: The team has expertise in logistics optimization and access to necessary tools.
+- **Effort/cost**: The project is categorized as medium effort (3-9 months, $25,000 budget).
+
+#### ROI assessment
+- **Impact**: High impact due to reduced fuel costs and improved customer satisfaction.
+- **Effort**: Medium effort, making this a strategic bet.
+
+**Decision**: Proceed with careful planning as it offers significant operational benefits.
+
+### Example use case: Coffee delivery AI project
+
+#### Applying the four pillars
+
+1. **Objective**: The AI project aims to enhance delivery operations through real-time tracking and automated scheduling to improve customer experience.
+2. **Audience**: The primary beneficiaries are end customers, ensuring timely and personalized deliveries. This could positively impact 50% of the customer base.
+3. **Training**: The project requires GPS tracking data and customer feedback systems. The estimated time to classify the data and train the model is 2 months, with a cost of $15,000.
+4. **Operations**: The AI system's daily operational cost, including cloud infrastructure and monitoring, is estimated at $40 per day.
+
+#### Feasibility assessment
+- **Data availability**: GPS tracking data and customer feedback systems are available.
+- **Skills and technology**: The team has expertise in delivery optimization and access to necessary tools.
+- **Effort/cost**: The project is categorized as low effort (<3 months, $15,000 budget).
+
+#### ROI assessment
+- **Impact**: High impact due to improved customer satisfaction and retention.
+- **Effort**: Low effort, making this a quick win.
+
+**Decision**: Prioritize this project as it offers high impact with manageable effort and cost.
 
 ### Next steps for presentation:
 
