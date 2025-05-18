@@ -111,11 +111,11 @@ graph LR
     L -- low impact / low effort --> O[opportunistic: consider if resources allow];
     L -- low impact / high effort --> P[avoid/de-prioritize];
 
-    classDef question fill:#f9f,stroke:#333,stroke-width:2px,color:#333,font-size:24px,height:100px,width:200px;
-    classDef decision fill:#lightgrey,stroke:#333,stroke-width:2px,color:#333,font-size:24px,height:100px,width:200px;
-    classDef outcomeGreen fill:#ccffcc,stroke:#333,stroke-width:2px,color:#333,font-size:24px,height:100px,width:200px;
-    classDef outcomeRed fill:#ffcccc,stroke:#333,stroke-width:2px,color:#333,font-size:24px,height:100px,width:200px;
-    classDef outcomeOrange fill:#ffebcc,stroke:#333,stroke-width:2px,color:#333,font-size:24px,height:100px,width:200px;
+    classDef question fill:#f9f,stroke:#333,stroke-width:2px,color:#333,font-size:16px,height:50px;
+    classDef decision fill:#lightgrey,stroke:#333,stroke-width:2px,color:#333,font-size:16px,height:50px;
+    classDef outcomeGreen fill:#ccffcc,stroke:#333,stroke-width:2px,color:#333,font-size:16px,height:50px;
+    classDef outcomeRed fill:#ffcccc,stroke:#333,stroke-width:2px,color:#333,font-size:16px,height:50px;
+    classDef outcomeOrange fill:#ffebcc,stroke:#333,stroke-width:2px,color:#333,font-size:16px,height:50px;
 
     class A,B,C,E1,F1,H,I,L,FP question;
     class Z1,Z2,Z3,P outcomeRed;
