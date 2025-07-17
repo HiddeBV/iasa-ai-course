@@ -28,9 +28,8 @@ Each lesson follows a consistent structure:
 
 ### Solution Documentation Patterns
 Solutions follow enterprise presentation format:
-- **Executive Summary** with duration and audience
-- **Slide-by-slide breakdown** with speaker notes
-- **Technical implementation details** (code examples, architecture diagrams)
+- **Slide-by-slide breakdown** 
+- **Technical implementation details** 
 - **ROI analysis and business justification**
 - **Implementation timelines and next steps**
 
@@ -39,14 +38,14 @@ Solutions follow enterprise presentation format:
 ### When Creating Assignments
 - Frame from Chief Architect perspective at Tinkleman Coffee
 - Include specific time constraints (typically 30 minutes for presentations)
-- Target specific audiences (CEO, InfoSec, Enterprise Architecture, etc.)
+- Target specific audiences (CEO, InfoSec, Enterprise Architecture, etc.) check in the assignment what the audience is
 
 
 ### When Creating Solutions
 - Use enterprise-grade presentation structure
 - Include mermaid diagrams for technical concepts
 - Provide speaker notes with "Why/How/Extra" explanations
-- Include specific code examples (TensorFlow, Flask, Docker patterns)
+<!-- - Include specific code examples (TensorFlow, Flask, Docker patterns) -->
 - Consider both technical and business stakeholder needs
 
 ### Technical Stack Preferences
